@@ -123,11 +123,25 @@ body{
     .card{
         background: transparent;
         border: transparent;
-    }
+        width: 33vw; 
 
-    video{
-        height:40vh;
-        cursor: pointer;
+        video{
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button{
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 0.2em 0.6em;
+            transition: all 0.25s ease;
+        }
+
+        button:hover{
+            background: #fff;
+            color: $royal-blue;
+        }
     }
 }
 

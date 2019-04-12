@@ -58,14 +58,23 @@ body {
 
 #projects {
   background-color: #4c7a91;
-  color: white;
-  height: 100vh; }
+  color: white; }
   #projects .card {
     background: transparent;
-    border: transparent; }
-  #projects video {
-    height: 40vh;
-    cursor: pointer; }
+    border: transparent;
+    width: 33vw; }
+    #projects .card video {
+      cursor: pointer;
+      width: 100%; }
+    #projects .card button {
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 0.2em 0.6em;
+      transition: all 0.25s ease; }
+    #projects .card button:hover {
+      background: #fff;
+      color: #4c7a91; }
 
 #contact {
   color: #4c7a91;
