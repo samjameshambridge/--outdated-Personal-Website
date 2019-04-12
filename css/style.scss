@@ -119,7 +119,6 @@ body{
 // projects section
 #projects{
     @include blue-section($royal-blue);
-    height: 100vh;
 
     .card{
         background: transparent;
