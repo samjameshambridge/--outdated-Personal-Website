@@ -62,17 +62,16 @@ body {
   #projects .card {
     background: transparent;
     border: transparent;
-    width: 33vw; }
+    width: 37.5vw; }
     #projects .card video {
       cursor: pointer;
       width: 100%; }
-    #projects .card button {
+    #projects .card a {
       background: none;
       border: 2px solid #fff;
       color: #fff;
-      padding: 0.2em 0.6em;
       transition: all 0.25s ease; }
-    #projects .card button:hover {
+    #projects .card a:hover {
       background: #fff;
       color: #4c7a91; }
 
