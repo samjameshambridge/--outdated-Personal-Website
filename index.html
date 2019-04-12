@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- links -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Sam Hambridge</title>
+</head>
+
+<body>
+    <!-- landing section -->
+    <section id="landing" class="overflow-hidden">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm py-3 mr-5">
+            <div class="container">
+                <button class="navbar-toggler btn-block" data-toggle="collapse" data-target="#navbarCollapse">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ml-5"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item ml-5"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item ml-5"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item ml-5"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row align-items-md-center justify-content-center" id="landing-content">
+            <div class="col-lg-4">
+                <img class="img img-fluid rounded-circle ml-5" id="profile-pic" src="img/profile-pic.jpg">
+            </div>
+            <div class="col-lg-8 d-flex flex-column text-center" id="landing-titles">
+                <h2 id="title-name">Sam Hambridge</h2>
+                <p class="mt-5" id="title-job"><span class="h2 txt-type" data-wait="200"
+                        data-words='["Front-End Devloper"]'></span> &nbsp</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <img src="img/line-background-2.svg" class="svg-top">
+    <section id="about">
+        <div class="container p-4">
+            <div class="text-white">
+                <h1 class="mb-5" id="about-title">About</h1>
+                <br>
+                <br>
+                <p class="lead">Hi, my name is Sam.
+                    <br>
+                    <br>
+                    <br>
+                    I'm a self taught front end developer.
+                    <br>
+                    <br>
+                    <br>
+                    I design and develop websites and web applications using HTML-5, CSS and Javascript. I started
+                    writing code at the start of 2019 and I've been intensively studying Front-End Development since.
+                    <br>
+                    <br>
+                    <br>
+                    If you want to know more about my skills or my projects then check them out by scrolling down below!
+                </p>
+            </div>
+        </div>
+    </section>
+    <img src="img/line-background-2-rev.svg" class="svg">
+
+    <!-- skills section -->
+    <section id="skills">
+        <div class="container p-4">
+            <h1 class="mb-3">Skills</h1>
+            <div class="row mb-4 p-3 text-center">
+
+                <div class="col-md-4">
+                    <h3 class="m-5">Javascript</h3>
+                    <div id="sliderJS" class="carousel slide mx-auto mb-5 w-50" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid rounded-circle skill-img" src="img/vanilla.png">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Vanilla Javascript</h4>
+                                    <p class="card-text"><small>I write a lot of custom vanilla Javascript in all my
+                                            projects. I appreciate frameworks and I do use them regularly but I enjoy
+                                            the feeling of knowing and understanding every tiny aspect of my
+                                            code.</small></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="d-block img-fluid rounded-circle skill-img" src="img/react.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">React</h4>
+                                    <p class="card-text"><small>React is my favourite Javascript framework and I'm
+                                            currently taking a lot of time to study and master it.</small></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="d-block img-fluid skill-img" src="img/jquery.png">
+                                <div class="card-body">
+                                    <h4 class="card-title"> JQuery</h4>
+                                    <p class="card-text"><small>I use JQuery a lot for my website projects. It's
+                                            required for bootstrap and materialize and it saves time reinventing the
+                                            wheel for every website.</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLS -->
+                        <a class="carousel-control-prev" data-slide="prev" data-target="#sliderJS">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a class="carousel-control-next" data-slide="next" data-target="#sliderJS">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="m-5">CSS</h3>
+                    <div id="sliderCSS" class="carousel slide mb-5 w-50 m-auto" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="img/bootstrap.png" class="d-block img-fluid rounded-circle skill-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Bootstrap</h4>
+                                    <p class="card-text"><small>I use the Bootstrap framework for most of my websites
+                                            (including this one!)</small></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img src="img/sass.jpg" class="d-block img-fluid rounded-circle skill-img">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sass</h4>
+                                    <p class="card-text"><small>Sass is my go-to CSS pre-compiler. Although I have used
+                                            Less, I find Sass more intuitive.</small></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="d-block img-fluid rounded-circle skill-img" src="img/materialize.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">Materialize</h4>
+                                    <p class="card-text"><small>Aside from Bootstrap, I'm also very familiar with the
+                                            Materialize framework and have used it in some of my other projects.
+                                        </small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLS -->
+                        <a class="carousel-control-prev" data-slide="prev" data-target="#sliderCSS">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a class="carousel-control-next" data-slide="next" data-target="#sliderCSS">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="m-5">Other</h3>
+                    <div id="sliderOther" class="carousel slide mx-auto mb-5 w-50" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active text-center">
+                                <img class="d-block img-fluid skill-img" src="img/git.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">Version Control</h4>
+                                    <p class="card-text"><small>Git! What a blessing. Since I began putting some of my
+                                            projects on the internet, I use version control to keep track of
+                                            changes.</small></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid rounded-circle skill-img" src="img/html.png">
+                                <div class="card-body">
+                                    <h4 class="card-title">HTML-5</h4>
+                                    <p class="card-text"><small>The classic standard. Like everyone else in the known
+                                            world I use HTML-5 in almost everything I do.</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTROLS -->
+                        <a class="carousel-control-prev" data-slide="prev" data-target="#sliderOther">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+
+                        <a class="carousel-control-next" data-slide="next" data-target="#sliderOther">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <img src="img/line-background-2.svg" class="svg-top">
+    <section id="projects">
+        <div class="container p-4 text-white">
+            <h1 class="my-5" id="projects-title">Projects</h1>
+            <div class="row text-center">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-title m-0 p-0">
+                            <h4>Lotus</h4>
+                        </div>
+                        <div class="card-body m-0 p-0">
+                            <video controls>
+                                <source type="video/mp4" src="./video/lotus-demo.mp4">
+                            </video>
+                            <p class="card-text">
+                                Lotus is a proof of concept app for meditation and relaxation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-title m-0 p-0">
+                            <h4>Personal Website</h4>
+                        </div>
+                        <div class="card-body m-0 p-0">
+                            <video controls>
+                                <source type="video/mp4" src="./video/personal-website-demo.mp4">
+                            </video>
+                            <p class="card-text px-3">
+                                This website which you are exploring now is a showcase of my skills and
+                                current
+                                projects.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="img/line-background-2-rev.svg" class="svg">
+
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container p-4">
+            <h1 class="mb-5" id="contact-title">Contact</h1>
+            <div class="row">
+                <div class="col text-center">
+                    <!-- <h3 class="mb-4">Get in Touch!</h3> -->
+                    <form class="px-5" action="https://formspree.io/samjameshambridge@hotmail.com" method="POST">
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" placeholder="Name" name="name" class="form-control">
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="email" placeholder="Email" name="email" class="form-control">
+                        </div>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </span>
+                            </div>
+                            <textarea type="text" placeholder="Message" name="message" rows="5"
+                                class="form-control"></textarea>
+                        </div>
+                        <input type="submit" value="Send" class="btn btn-block btn-lg submit-btn">
+                    </form>
+                </div>
+            </div>
+            <h3 class="my-5 text-center" id="follow-title">Follow me on Social Media!</h3>
+            <div class="text-center mt-2" id="icon-group">
+                <a href="https://www.linkedin.com/in/samuel-hambridge-2a168816b/" target="_blank"><i
+                        class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://www.facebook.com/samuelhambridge" target="_blank" class="icon-facebook m-5"><i
+                        class="fab fa-github fa-3x"></i>
+                </a>
+                <a href="https://www.instagram.com/sam_hambridge/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- scripts -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- bootstraps -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

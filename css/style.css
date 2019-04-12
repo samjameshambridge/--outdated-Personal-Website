@@ -1,0 +1,126 @@
+body {
+  font-size: 20px !important;
+  color: #4c7a91;
+  font-family: "Josefin Sans", sans-serif !important;
+  overflow-x: hidden; }
+  body h1, body h2, body h3 {
+    font-family: "Rock Salt", cursive;
+    font-weight: 500; }
+  body a {
+    text-decoration: none !important; }
+  body button:focus {
+    outline: none; }
+
+#landing {
+  color: #4c7a91;
+  height: 100vh; }
+  #landing .navbar {
+    height: 15vh; }
+    #landing .navbar .navbar-nav a {
+      color: #4c7a91;
+      border-top: solid transparent 1px;
+      transition: border-top, margin-bottom ease-in-out;
+      transition-duration: 0.2s; }
+    #landing .navbar .navbar-nav a:hover {
+      cursor: pointer;
+      border-top: solid #4c7a91 3px;
+      margin-bottom: -5px; }
+    #landing .navbar i {
+      color: #4c7a91; }
+  #landing #landing-content {
+    height: 75%; }
+    #landing #landing-content img {
+      height: 33vh; }
+    #landing #landing-content #landing-titles {
+      max-width: 50vw; }
+    #landing #landing-content #title-name {
+      font-size: 3.5rem; }
+
+#about {
+  background-color: #4c7a91;
+  color: white;
+  height: 100vh; }
+
+#skills {
+  color: #4c7a91;
+  height: 100vh; }
+  #skills .carousel .carousel-item {
+    height: 10vh;
+    width: 100%; }
+    #skills .carousel .carousel-item .skill-img {
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%; }
+  #skills .carousel .carousel-control-prev-icon, #skills .carousel .carousel-control-next-icon, #skills .carousel .carousel-indicators {
+    filter: invert(100%); }
+  #skills .carousel .carousel-control-prev-icon, #skills .carousel .carousel-control-next-icon, #skills .carousel .carousel-indicators :hover {
+    cursor: pointer; }
+
+#projects {
+  background-color: #4c7a91;
+  color: white;
+  height: 100vh; }
+  #projects .card {
+    background: transparent;
+    border: transparent; }
+  #projects video {
+    height: 40vh;
+    cursor: pointer; }
+
+#contact {
+  color: #4c7a91;
+  height: 100vh; }
+  #contact .submit-btn {
+    color: white;
+    background-color: #4c7a91; }
+  #contact .fab {
+    opacity: 0.9;
+    color: #4c7a91; }
+  #contact .fab:hover {
+    opacity: 1;
+    cursor: pointer; }
+
+.svg {
+  margin-top: -1vh; }
+
+.svg-top {
+  width: 105vw;
+  margin-bottom: -1vh;
+  margin-left: -1vw; }
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem !important;
+    max-width: 100%; }
+
+  #profile-pic {
+    max-width: 60vw; }
+
+  #follow-title {
+    display: none; }
+
+  #icon-group {
+    padding-top: 2em; } }
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem !important;
+    max-width: 100%; }
+
+  .navbar {
+    text-align: center; }
+    .navbar .nav-item {
+      margin: 0 !important; }
+
+  #profile-pic {
+    max-width: 50vw;
+    margin: -5vh 0 10vh 0 !important; }
+
+  #title-job {
+    font-size: 1.0rem;
+    margin-bottom: 10vh; }
+
+  #landing-images-group {
+    display: grid;
+    justify-content: center; } }
+
+/*# sourceMappingURL=style.css.map */
