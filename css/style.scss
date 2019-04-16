@@ -40,7 +40,7 @@ body{
         height: 15vh;
 
         .navbar-nav{    
-            margin-right: 5vw;
+            margin-right: 11vw;
 
             a{
                 color: rgb(76, 122, 145);
@@ -61,7 +61,7 @@ body{
         }
     }
 
-    #landing-content{
+    .landing-content{
         height: 75%;
 
         img{
@@ -69,12 +69,12 @@ body{
             margin-top: -5vh;
         }
     
-        #landing-titles{
+        .landing-titles{
             max-width: 50vw;
-        }
-    
-        #title-name{
-            font-size: 3rem;
+
+            h2{
+                font-size: 3rem;
+            }
         }
     }
 }
@@ -84,8 +84,16 @@ body{
     @include blue-section($royal-blue);
     height: 100vh;
 
-    p{
-        padding: 0em 9em 0em 0em;
+    #about-title{
+        margin-bottom: 15vh;
+    }
+
+    .intro{
+        font-size: 2.25rem;
+    }
+
+    .row{
+        margin-top: 15vh;
     }
 
     img{
@@ -198,61 +206,104 @@ body{
 }
 
 
-@media screen and (max-width: 576px){
-
-    // utility classes
-    h1{
-        font-size: 2rem !important;
-        max-width: 100%;
-    }
-
-    // landing section
-    #profile-pic{
-        max-width: 60vw;
-    }
-
-    // contact section
-    #follow-title{
-        display: none;
-    }
-
-    #icon-group{
-        padding-top: 2em;
-    }
-}
-
 @media screen and (max-width: 992px){
-    // general
-    h1{
+    h1, h2, h3{
         font-size: 2rem !important;
         max-width: 100%;
+        text-align: center;
     }
 
-    // navigation bar
-    .navbar{
-        text-align: center;
+    h4{
+        font-size: 1.5rem !important;
+    }
 
-        .nav-item{
-            margin: 0 !important;
+    #landing{
+        height: 100vh;
+        margin-bottom: 5vh!important;
+
+        .navbar{
+            margin-bottom: 10vh !important;
+            text-align: center;
+            z-index: 1;
+
+            .nav-item{
+                margin: 0 !important;
+            }
+        }
+
+        .landing-content{
+            margin-top: 10vh;
+    
+            .txt-type{
+                font-size: 1.25rem!important;
+                letter-spacing: 0.01rem;
+            }
+    
+            img{
+                margin-bottom: 5vh;
+            }
         }
     }
 
-    // landing section
-    #profile-pic{
-        max-width: 50vw;
-        margin: -5vh 0 10vh 0!important;
+    #about{
+        height:auto;
+
+        .intro{
+            font-size: 1.5rem;
+            width: 100% !important;
+        }
+
+        img{
+            margin: 2rem 0;
+        }
+
+        .intro-2{
+            display: none;
+        }
+    }
+   
+    #skills{
+        img{
+            height: 7.5vh;
+            margin: 2vh 2vw !important;
+        }
+
+        .active{
+            transform: scale(1.25)!important;
+        }
+
+        p{
+            font-size: 1rem !important;
+        }
     }
 
-    #title-job{
-        font-size: 1.0rem;
-        margin-bottom: 10vh;
+    #projects{
+        .card{
+            width: 90vw;
+        }
     }
 
-    #landing-images-group{
-        display: grid;
-        justify-content: center;
+    #contact{
+        .follow-title{
+            display: none;
+        }
+    
+        .icon-group{
+            padding-top: 2em;
+        }
     }
 }
 
+@media screen and (max-width: 557px){
+    #landing{
+        height: auto;
 
-
+        .navbar-collapse{
+            background: #fff;
+            height: 50vh;
+            margin-right: -10vh !important;
+            width: 100vw;
+        }
+    }
+    
+}

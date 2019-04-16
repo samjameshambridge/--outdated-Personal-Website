@@ -1,6 +1,9 @@
-// type effect for landing page
-(function typeIIFE() {
-  const typingObject = {
+(function jsIIFE() {
+  // call init on dom load
+  document.addEventListener("DOMContentLoaded", initPage);
+
+  // type effect for landing page
+  const typeCtrl = {
     init: function (txtElement, words, typeSpeed) {
       this.txtElement = txtElement; //DOM element
       this.words = words; /*Front End Developer*/
@@ -103,67 +106,48 @@
     }
   };
 
-  // call init on dom load
-  document.addEventListener("DOMContentLoaded", initApp);
+  const skillImgCtrl = {
+    init: function (originalClass, images) {
+      this.originalClass = originalClass,
+        this.images = images;
+
+      images.forEach(image => image.addEventListener('mouseover', this.imgActive));
+    },
+
+    imgActive: function () {
+      skillImgCtrl.deactivateImages();
+      this.className = `${skillImgCtrl.originalClass} active`;
+      skillImgCtrl.textHandler(this);
+    },
+
+    deactivateImages: function () {
+      this.images.forEach(image => {
+        image.className = this.originalClass;
+      })
+    },
+
+    textHandler: function (image) {
+      const id = image.getAttribute('data-id');
+
+      // these are all classnames defined in the css
+      document.querySelectorAll('.image-text-set div').forEach(textBox => textBox.getAttribute('data-text') === id ? textBox.className = "active-text" : textBox.className = "group");
+    }
+  }
 
   // begin
-  function initApp() {
-    const txtElement = document.querySelector(".txt-type");
-    const words = JSON.parse(txtElement.getAttribute("data-words"));
-    const typeSpeed = txtElement.getAttribute("data-wait");
+  function initPage() {
+    const txtElement = document.querySelector(".txt-type"),
+      words = JSON.parse(txtElement.getAttribute("data-words")),
+      typeSpeed = txtElement.getAttribute("data-wait"),
+      originalClass = "img img-fluid rounded-circle m-5",
+      images = document.querySelectorAll('.image-set img');
 
-    // init type writer
-    typingObject.init(txtElement, words, typeSpeed);
-    typingObject.type();
+
+    // init type ctrl
+    typeCtrl.init(txtElement, words, typeSpeed);
+    typeCtrl.type();
+
+    // init skill img ctrl
+    skillImgCtrl.init(originalClass, images);
   }
-})();
-
-// smooth scrolling initializaion
-(function scrollerIIFE() {
-  $("a").on("click", function (e) {
-    if (this.hash !== "") {
-      e.preventDefault();
-
-      let hash = this.hash;
-
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top
-        },
-        800,
-        () => {
-          window.location.hash = hash;
-        }
-      );
-    }
-  });
-})();
-
-// skills images initialization
-(function skillsImgs() {
-  // javascript image will start as the active button
-  // on hover the class 'active' will pass from one skill to the other
-  // text will additionally change with hover
-  const originalClass = "img img-fluid rounded-circle m-5",
-    images = document.querySelectorAll('.image-set img');
-
-  images.forEach(image => image.addEventListener('mouseover', imgActive));
-
-  function imgActive() {
-    deactivateImages();
-    this.className = `${originalClass} active`;
-    textHandler(this);
-  }
-
-  function deactivateImages() {
-    images.forEach(image => {
-      image.className = originalClass;
-    })
-  }
-
-  function textHandler(image) {
-    const id = image.getAttribute('data-id');
-
-    document.querySelectorAll('.image-text-set div').forEach(textBox => textBox.getAttribute('data-text') === id ? textBox.className = "active-text" : textBox.className = "group");
-  }
-})()
+}());

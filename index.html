@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- links -->
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -29,63 +28,60 @@
     <!-- landing section -->
     <section id="landing" class="overflow-hidden">
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-sm py-3 mr-5">
-            <div class="container">
-                <button class="navbar-toggler btn-block" data-toggle="collapse" data-target="#navbarCollapse">
-                    <i class="fas fa-bars fa-2x"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ml-5"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item ml-5"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item ml-5"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item ml-5"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-sm container py-3 mr-5">
+            <button class="navbar-toggler btn-block" data-toggle="collapse" data-target="#navbarCollapse">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-5"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item ml-5"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item ml-5"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item ml-5"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
-        <div class="row align-items-md-center justify-content-center" id="landing-content">
-            <div class="col-lg-4 d-flex justify-content-center">
-                <img class="img img-fluid rounded-circle" id="profile-pic" src="img/profile-pic.jpg">
+        <div class="landing-content row align-items-md-center justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center">
+                <img class="profile-pic img img-fluid rounded-circle" src="img/profile-pic.jpg">
             </div>
-            <div class="col-lg-8 d-flex flex-column text-center" id="landing-titles">
-                <h2 id="title-name">Sam Hambridge</h2>
-                <p class="mt-5" id="title-job"><span class="h2 txt-type" data-wait="200"
-                        data-words='["Front-End Devloper"]'></span> &nbsp</p>
+            <div class="landing-titles col-md-8 d-flex flex-column text-center">
+                <h2>Sam Hambridge</h2>
+                <p class="mt-5"><span class="h2 txt-type" data-wait="100" data-words='["Front-End Devloper"]'></span>
+                    &nbsp</p>
             </div>
         </div>
     </section>
 
     <!-- about section -->
-    <img src="img/line-background-2.svg" class="svg-top">
+    <img src="svg/line-background-2.svg" class="svg-top">
     <section id="about">
         <div class="container p-4 text-white">
-            <h1 class="mb-5" id="about-title">About</h1>
-            <br>
-            <br>
-            <div class="d-flex">
-                <p class="lead">Hi, my name is Sam.
+            <h1 id="about-title">About</h1>
+            <div class="d-flex w-100 align-items-md-baseline text-center">
+                <p class="intro w-50">Hi, my name is Sam.</p>
+                <p class="intro-2 w-50">I'm a self taught front-end developer, a University of Nottingham graduate and a
+                    Birmingham native.</p>
+            </div>
+            <div class="row m-0 text-center">
+                <div class="image-div col-md-6 justify-self-center">
+                    <img class="img img-fluid rounded-circle " src="./img/sam-mt-keen.jpg" alt="picture">
+                </div>
+                <p class="about-text col-md-6 px-5">
+                    <br>
+                    <br>
+                    I write single page web applications and websites using modern Javascript technologies
+                    alongside CSS and HTML.
                     <br>
                     <br>
                     <br>
-                    I'm a self taught front end developer.
-                    <br>
-                    <br>
-                    <br>
-                    I design and develop websites and web applications using HTML-5, CSS and Javascript. I started
-                    writing code at the start of 2019 and I've been intensively studying Front-End Development since.
-                    <br>
-                    <br>
-                    <br>
-                    If you want to know more about my skills or my projects then check them out by scrolling down below!
+                    If you want to know more about my skills or projects then scroll down
+                    below!
                 </p>
-
-                <img class="img img-fluid rounded-circle align-self-center justify-self-center"
-                    src="./img/sam-mt-keen.jpg" alt="picture">
             </div>
         </div>
     </section>
-    <img src="img/line-background-2-rev.svg" class="svg">
+    <img src="svg/line-background-2-rev.svg" class="svg">
 
     <!-- skills section -->
     <section id="skills">
@@ -111,65 +107,75 @@
                 <div class="image-text-set mx-5">
                     <div class="group" data-text="vanilla">
                         <h4 class="h2">Vanilla JavaScript</h4>
-                        <p class="lead">I love javascript.
+                        <p class="lead">I write a lot of code in vanilla Javascript and have spent a lot of time
+                            learning it. Although React and other frameworks
+                            make life easy, I believe in understanding how things work on a fundamental level.
                         </p>
                     </div>
 
                     <div class="active-text" data-text="react">
                         <h4 class="h2">React</h4>
-                        <p class="lead">React is my favourite framework in the world Lorem, ipsum dolor sit amet
-                            consectetur adipisicing elit. Beatae, officia?
+                        <p class="lead">I write single page web applications in React using the Context API for state
+                            management in smaller applications and Redux for larger applications. It's easy, it's fun
+                            and I love it.
                         </p>
                     </div>
 
                     <div class="group" data-text="redux">
                         <h4 class="h2">Redux</h4>
-                        <p class="lead">Honestly, i kinda hate redux but i have to put it down if i have any hope of
-                            getting a job
+                        <p class="lead">Whenever I write a single page application that gets too big for React's Context
+                            API, I normally use Redux for state management.
                         </p>
                     </div>
 
                     <div class="group" data-text="bootstrap">
                         <h4 class="h2">Bootstrap</h4>
-                        <p class="lead">What could you do in css really if you dont know how to use bootstrap, youre
-                            basic
+                        <p class="lead">Bootstrap is my go-to CSS framework, I'm very well-versed with it and when I'm
+                            making something serious, I normally use it.
                         </p>
                     </div>
 
                     <div class="group" data-text="materialize">
                         <h4 class="h2">Materialize</h4>
-                        <p class="lead">materialize is pretty funky but ive used it before
+                        <p class="lead">Materialize is fun, I'm comfortable with it and although I haven't used it yet
+                            for any of my main projects yet, I am hoping to in the near future.
                         </p>
                     </div>
 
                     <div class="group" data-text="sass">
                         <h4 class="h2">Sass</h4>
-                        <p class="lead">god sass is a blessing, i cant believe i used to write css without it
+                        <p class="lead">Sass is a blessing. I have used Less before but primarily I write in Sass
+                            simply because I discovered it first. I use both Koala and the Live Sass Compiler in VS Code
+                            for compilation.
                         </p>
                     </div>
 
                     <div class="group" data-text="html">
                         <h4 class="h2">HTML-5</h4>
-                        <p class="lead">pretty basic
+                        <p class="lead">Like most Web Developer, I use the latest standard of the HTML mark-up language
+                            to create every single app and webpage that I have created.
                         </p>
                     </div>
 
                     <div class="group" data-text="jquery">
                         <h4 class="h2">jQuery</h4>
-                        <p class="lead">eurgh, very old and ugly but what can you do
+                        <p class="lead">Although it is old and it is going out of fashion a little bit, it's powerful
+                            and it saves re-inventing the wheel. I use jQuery primarily when I design websites
+                            (including this one!)
                         </p>
                     </div>
 
                     <div class="group" data-text="git">
                         <h4 class="h2">Git</h4>
-                        <p class="lead">aaaargh git wooo
+                        <p class="lead">I version control all my projects from the command line and everything is
+                            available for viewing on my github page (www.github.com/samjameshambridge)
                         </p>
                     </div>
 
                     <div class="group" data-text="npm">
                         <h4 class="h2">npm</h4>
-                        <p class="lead">every single npm module is a personal favourite of mine, yep thats right i know
-                            them all
+                        <p class="lead">I included npm in this list because it's largely irreplaceable in a lot of
+                            applications, I've used it a lot and it's make my life a lot easier.
                         </p>
                     </div>
                 </div>
@@ -179,7 +185,7 @@
     </section>
 
     <!-- projects section -->
-    <img src="img/line-background-2.svg" class="svg-top">
+    <img src="svg/line-background-2.svg" class="svg-top">
     <section id="projects">
         <div class="container p-4 text-white">
             <h1 class="my-5" id="projects-title">Projects</h1>
@@ -216,7 +222,7 @@
             </div>
         </div>
     </section>
-    <img src="img/line-background-2-rev.svg" class="svg">
+    <img src="svg/line-background-2-rev.svg" class="svg">
 
     <!-- contact section -->
     <section id="contact">
@@ -224,8 +230,7 @@
             <h1 class="my-5" id="contact-title">Contact</h1>
             <div class="row">
                 <div class="col text-center">
-                    <!-- <h3 class="mb-4">Get in Touch!</h3> -->
-                    <form class="px-5" action="https://formspree.io/samjameshambridge@hotmail.com" method="POST">
+                    <form action="https://formspree.io/samjameshambridge@hotmail.com" method="POST" class="px-5">
                         <div class="input-group input-group-lg mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -251,12 +256,13 @@
                             <textarea type="text" placeholder="Message" name="message" rows="5"
                                 class="form-control"></textarea>
                         </div>
-                        <input type="submit" value="Send" class="btn btn-block btn-lg submit-btn">
+                        <input type="submit" name="submit" value="Send" class="btn btn-block btn-lg submit-btn">
+                        <input type="hidden" name="_next" value="//samjameshambridge.com/index.html" />
                     </form>
                 </div>
             </div>
-            <h3 class="my-5 text-center" id="follow-title">Follow me on Social Media!</h3>
-            <div class="text-center my-2" id="icon-group">
+            <h3 class="follow-title my-5 text-center">Follow me on Social Media!</h3>
+            <div class="icon-group text-center my-2">
                 <a href="https://www.linkedin.com/in/samuel-hambridge-2a168816b/" target="_blank"><i
                         class="fab fa-linkedin fa-3x"></i>
                 </a>
@@ -277,11 +283,14 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!-- bootstraps -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
-        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
     <!-- custom js -->
