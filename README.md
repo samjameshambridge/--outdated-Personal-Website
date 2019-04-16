@@ -18,15 +18,15 @@ This is my personal website which I use for showcasing my skills and my portfoli
 
 This is a sample of <em>some</em> of the sections of my site.
 
-![landing-section](https://github.com/samjameshambridge/Personal-Website/tree/screenshots/screenshots/landing-section.png)
+![landing-section](https://github.com/samjameshambridge/Personal-Website/blob/screenshots/screenshots/landing-section.png)
 
 Landing Section on load.
 
-![landing-section](https://github.com/samjameshambridge/Personal-Website/tree/screenshots/screenshots/skills-section.png)
+![skills-section](https://github.com/samjameshambridge/Personal-Website/blob/screenshots/screenshots/skills-section.png)
 
 My skills section.
 
-![landing-section](https://github.com/samjameshambridge/Personal-Website/tree/screenshots/screenshots/contact-section.png)
+![contact-section](https://github.com/samjameshambridge/Personal-Website/blob/screenshots/screenshots/contact-section.png)
 
 Contact form.
 
@@ -40,7 +40,7 @@ This project is written with:
 
 ## Status
 
-Project is: _finished.
+Project is: _finished.(
 
 Although I will make additions and changes along the way as my skills and projects change. This website is deployed and considered finished.
 
