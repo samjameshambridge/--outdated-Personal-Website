@@ -72,21 +72,24 @@ body {
 #projects {
   background-color: #4c7a91;
   color: white; }
-  #projects video {
-    cursor: pointer;
-    width: 100% !important; }
-  #projects p {
-    font-size: 0.75rem;
-    opacity: 0.8; }
-  #projects a {
+  #projects .card {
     background: none;
-    border: 2px solid white;
-    color: white;
-    padding: 0.5em 1em;
-    transition: all 0.25s ease; }
-  #projects a:hover {
-    background: white;
-    color: #4c7a91; }
+    border: none; }
+    #projects .card video {
+      cursor: pointer;
+      width: 100% !important; }
+    #projects .card p {
+      font-size: 0.75rem;
+      opacity: 0.8; }
+    #projects .card a {
+      background: none;
+      border: 2px solid white;
+      color: white;
+      padding: 0.5em 1em;
+      transition: all 0.25s ease; }
+    #projects .card a:hover {
+      background: white;
+      color: #4c7a91; }
 
 #contact {
   color: #4c7a91;

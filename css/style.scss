@@ -140,6 +140,10 @@ body{
 #projects{
     @include blue-section($royal-blue);
 
+    .card{
+        background: none;
+        border: none;
+
         video{
             cursor: pointer;
             width: 100%!important;
@@ -162,6 +166,7 @@ body{
             background: $main-white;
             color: $royal-blue;
         }
+    }
 }
 
 // contact section
