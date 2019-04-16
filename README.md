@@ -12,7 +12,7 @@
 * [Contact](#contact)
 
 ## Introduction
-This is my personal website which I used for showcasing my skills and my portfolio of current projects. 
+This is my personal website which I use for showcasing my skills and my portfolio of current projects. 
 
 ## Screenshots
 
