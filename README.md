@@ -1,6 +1,6 @@
 # Personal Website
 
-<img src="./img/profile-pic.jpg" width="75">
+<img src="./img/profile-pic.jpg" width="200">
 
 ## Table of contents
 * [Introduction](#introduction)
