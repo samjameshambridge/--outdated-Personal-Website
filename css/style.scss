@@ -3,15 +3,10 @@ $royal-blue: rgb(76, 122, 145);
 $trendy-font: 'Rock Salt', cursive;
 $regular-font: 'Josefin Sans', sans-serif;
 
-//mixins
-@mixin white-section($royal-blue){
-    color: $royal-blue;
-    height: 100vh;
-}
-
+// blue section mixin
 @mixin blue-section($royal-blue){
     background-color: $royal-blue;
-    color: white;
+    color: #fff;
 }
 
 // body and utility classes
@@ -38,13 +33,15 @@ body{
 
 // home section
 #landing{
-    @include white-section($royal-blue);
+    height: 100vh;
 
     // navigation bar styling
     .navbar{
         height: 15vh;
 
         .navbar-nav{    
+            margin-right: 5vw;
+
             a{
                 color: rgb(76, 122, 145);
                 border-top: solid transparent 1px;
@@ -68,7 +65,8 @@ body{
         height: 75%;
 
         img{
-            height: 33vh;
+            height: 40vh;
+            margin-top: -5vh;
         }
     
         #landing-titles{
@@ -76,7 +74,7 @@ body{
         }
     
         #title-name{
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
     }
 }
@@ -85,35 +83,47 @@ body{
 #about{
     @include blue-section($royal-blue);
     height: 100vh;
+
+    p{
+        padding: 0em 9em 0em 0em;
+    }
+
+    img{
+        height: 40vh;
+    }
 }
 
 // skills section
 #skills{
-    @include white-section($royal-blue);
+    color: ($royal-blue);
 
-    .carousel{
-   
-        .carousel-item{
-            height: 10vh;
-            width: 100%;
-    
-            .skill-img{
-                margin: auto;
-                max-height: 100%;
-                max-width: 100%;
+    .content{
+        margin-top: 5vh;
+
+        .image-set{
+            img{
+                cursor: pointer;
+                height: 15vh;
+                transition: all 0.25s ease-in-out;
+            }
+
+            .active{
+                transform: scale(1.75);
             }
         }
-    
-        .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
-            filter: invert(100%);
-        }
-    
-        .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators :hover{
-            cursor: pointer;
+
+        .image-text-set{
+            margin: 2em 0;
+
+            .active-text{
+                display: inherit;
+            }
+
+            .group{
+                display: none;
+            }
         }
     }
-
-
 }
 
 // projects section
@@ -123,17 +133,23 @@ body{
     .card{
         background: transparent;
         border: transparent;
-        width: 37.5vw; 
+        width: 50vw; 
 
         video{
             cursor: pointer;
             width: 100%;
         }
 
+        p{
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
         a{
             background: none;
             border: 2px solid #fff;
             color: #fff;
+            padding: 0.5em 1em;
             transition: all 0.25s ease;
         }
 
@@ -146,12 +162,17 @@ body{
 
 // contact section
 #contact{
-    @include white-section($royal-blue);
+    color: ($royal-blue);
 
     // submit button
     .submit-btn{
-        color: white;
+        color: #fff;
         background-color: $royal-blue;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .submit-btn:hover{
+        opacity: 0.75;
     }
 
     // social media icons

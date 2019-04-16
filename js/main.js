@@ -139,12 +139,31 @@
   });
 })();
 
-// bootstrap carousel initialization
-(function carouselIIFE() {
-  $(".carousel").carousel({
-    interval: 0,
-    keyboard: true,
-    ride: false,
-    wrap: true
-  });
-})();
+// skills images initialization
+(function skillsImgs() {
+  // javascript image will start as the active button
+  // on hover the class 'active' will pass from one skill to the other
+  // text will additionally change with hover
+  const originalClass = "img img-fluid rounded-circle m-5",
+    images = document.querySelectorAll('.image-set img');
+
+  images.forEach(image => image.addEventListener('mouseover', imgActive));
+
+  function imgActive() {
+    deactivateImages();
+    this.className = `${originalClass} active`;
+    textHandler(this);
+  }
+
+  function deactivateImages() {
+    images.forEach(image => {
+      image.className = originalClass;
+    })
+  }
+
+  function textHandler(image) {
+    const id = image.getAttribute('data-id');
+
+    document.querySelectorAll('.image-text-set div').forEach(textBox => textBox.getAttribute('data-text') === id ? textBox.className = "active-text" : textBox.className = "group");
+  }
+})()
