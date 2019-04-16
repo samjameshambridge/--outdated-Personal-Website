@@ -1,6 +1,6 @@
 # Personal Website
 
-
+![Profile Pic](./img/profile-pic.jpg)
 
 ## Table of contents
 * [Introduction](#introduction)
