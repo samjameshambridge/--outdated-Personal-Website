@@ -16,7 +16,19 @@ This is my personal website which I use for showcasing my skills and my portfoli
 
 ## Screenshots
 
-- to be updated
+This is a sample of <em>some</em> of the sections of my site.
+
+![landing-section](https://github.com/samjameshambridge/Personal-Website/tree/screenshots/screenshots/landing-section.png)
+
+Landing Section on load.
+
+![landing-section](https://github.com/samjameshambridge/Personal-Website/tree/screenshots/screenshots/skills-section.png)
+
+My skills section.
+
+![landing-section](https://github.com/samjameshambridge/Personal-Website/tree/screenshots/screenshots/contact-section.png)
+
+Contact form.
 
 ## Technologies
 This project is written with:
