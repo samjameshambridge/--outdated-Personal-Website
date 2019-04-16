@@ -82,7 +82,7 @@ body{
 // about section
 #about{
     @include blue-section($royal-blue);
-    height: 100vh;
+    min-height: 100vh;
 
     #about-title{
         margin-bottom: 15vh;
@@ -104,6 +104,7 @@ body{
 // skills section
 #skills{
     color: ($royal-blue);
+    min-height: 100vh;
 
     .content{
         margin-top: 5vh;
@@ -171,6 +172,7 @@ body{
 // contact section
 #contact{
     color: ($royal-blue);
+    min-height: 100vh;
 
     // submit button
     .submit-btn{

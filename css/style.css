@@ -41,7 +41,7 @@ body {
 #about {
   background-color: #4c7a91;
   color: #fff;
-  height: 100vh; }
+  min-height: 100vh; }
   #about #about-title {
     margin-bottom: 15vh; }
   #about .intro {
@@ -52,7 +52,8 @@ body {
     height: 40vh; }
 
 #skills {
-  color: #4c7a91; }
+  color: #4c7a91;
+  min-height: 100vh; }
   #skills .content {
     margin-top: 5vh; }
     #skills .content .image-set img {
@@ -92,7 +93,8 @@ body {
       color: #4c7a91; }
 
 #contact {
-  color: #4c7a91; }
+  color: #4c7a91;
+  min-height: 100vh; }
   #contact .submit-btn {
     color: #fff;
     background-color: #4c7a91;
