@@ -56,11 +56,11 @@ body {
   min-height: 100vh; }
   #skills .content {
     margin-top: 5vh; }
-    #skills .content .image-set img {
+    #skills .content img {
       cursor: pointer;
       height: 15vh;
       transition: all 0.25s ease-in-out; }
-    #skills .content .image-set .active {
+    #skills .content .active {
       transform: scale(1.75); }
     #skills .content .image-text-set {
       margin: 2em 0; }
@@ -111,7 +111,7 @@ body {
   margin-top: -1vh; }
 
 .svg-top {
-  width: 105vw;
+  width: 100vw;
   margin-bottom: -1vh;
   margin-left: -1vw; }
 
@@ -152,7 +152,7 @@ body {
       display: none; }
 
   #skills img {
-    height: 7.5vh;
+    height: 7.5vh !important;
     margin: 2vh 2vw !important; }
   #skills .active {
     transform: scale(1.25) !important; }
@@ -169,10 +169,19 @@ body {
 @media screen and (max-width: 557px) {
   #landing {
     height: auto; }
+    #landing .landing-titles {
+      max-width: 100vh !important; }
     #landing .navbar-collapse {
       background: white;
-      height: 50vh;
-      margin-right: -10vh !important;
-      width: 100vw; } }
+      margin-right: -7.5vh !important; }
+
+  #skills .active {
+    transform: scale(2) !important; }
+
+  #projects .card {
+    width: 100% !important; }
+    #projects .card .card-body {
+      padding-right: 0 !important;
+      padding-left: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */
