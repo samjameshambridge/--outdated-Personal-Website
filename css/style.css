@@ -59,9 +59,11 @@ body {
     #skills .content img {
       cursor: pointer;
       height: 15vh;
-      transition: all 0.25s ease-in-out; }
+      transition: transform 0.25s ease-in-out; }
     #skills .content .active {
       transform: scale(1.75); }
+    #skills .content .react {
+      animation: shake 2.75s ease-in-out infinite; }
     #skills .content .image-text-set {
       margin: 2em 0; }
       #skills .content .image-text-set .active-text {
@@ -115,6 +117,21 @@ body {
   margin-bottom: -1vh;
   margin-left: -1vw; }
 
+@keyframes shake {
+  0% {
+    transform: scale(1.75); }
+  3% {
+    transform: rotateZ(10deg) scale(1.75); }
+  6% {
+    transform: rotateZ(-10deg) scale(1.75); }
+  9% {
+    transform: rotateZ(10deg) scale(1.75); }
+  12% {
+    transform: rotateZ(-10deg) scale(1.75); }
+  15% {
+    transform: rotateZ(0deg) scale(1.75); }
+  100% {
+    transform: scale(1.75); } }
 @media screen and (max-width: 992px) {
   h1, h2, h3 {
     font-size: 2rem !important;
