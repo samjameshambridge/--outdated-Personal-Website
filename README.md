@@ -40,7 +40,7 @@ This project is written with:
 
 ## Status
 
-Project is: _finished.(
+Project is: _finished.
 
 Although I will make additions and changes along the way as my skills and projects change. This website is deployed and considered finished.
 
