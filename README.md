@@ -46,7 +46,9 @@ Although I will make additions and changes along the way as my skills and projec
 
 ## Inspiration
 
-I wanted to make a website which felt fairly minimalist, relaxed and simple. I also didn't want to have a tonne of effects and animations, I just wanted it do be engaging.
+After beginning to write a lot of my own projects, I wanted a website which I could use to display and showcase them.
+
+The aim was to create a website which felt fairly original and simple. I didn't want to have too many effects and animations, i wanted to it to be clear and accessible.
 
 ## Contact
 

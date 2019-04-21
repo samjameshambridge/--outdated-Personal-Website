@@ -120,15 +120,15 @@ body {
 @keyframes shake {
   0% {
     transform: scale(1.75); }
-  3% {
+  4% {
     transform: rotateZ(10deg) scale(1.75); }
-  6% {
+  8% {
     transform: rotateZ(-10deg) scale(1.75); }
-  9% {
-    transform: rotateZ(10deg) scale(1.75); }
   12% {
+    transform: rotateZ(10deg) scale(1.75); }
+  16% {
     transform: rotateZ(-10deg) scale(1.75); }
-  15% {
+  20% {
     transform: rotateZ(0deg) scale(1.75); }
   100% {
     transform: scale(1.75); } }
