@@ -15,10 +15,12 @@
     },
 
     type: function () {
-      const blue = "rgb(76, 122, 145)",
-        transparent = "transparent";
+
 
       var interval = setInterval(() => {
+        const blue = "rgb(76, 122, 145)",
+          transparent = "transparent";
+
         if (
           this.i === 0 ||
           this.i === 2 ||
@@ -83,7 +85,10 @@
 
     //increment the character for a typing effect
     incrementCharacterCtrl: function () {
-      var txt = this.words.toString();
+      const blue = "rgb(76, 122, 145)",
+        transparent = "transparent";
+
+      const txt = this.words.toString();
 
       if (this.isTyping) {
         this.txtElement.innerHTML = txt.substring(0, this.i - 6);
