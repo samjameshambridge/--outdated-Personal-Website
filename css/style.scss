@@ -210,7 +210,9 @@ body{
 }
 
 @keyframes shake {
-    0% {transform: scale(1.75)}
+    0% {
+        transform: scale(1.75)
+    }
 
     4% {
         transform: rotateZ(10deg) scale(1.75)

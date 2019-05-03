@@ -15,6 +15,9 @@
     },
 
     type: function () {
+      const blue = "rgb(76, 122, 145)",
+        transparent = "transparent";
+
       var interval = setInterval(() => {
         if (
           this.i === 0 ||
@@ -24,7 +27,7 @@
           this.i === 23 ||
           this.i === 25
         ) {
-          this.borderBlue();
+          this.borderColor(blue);
         }
 
         if (
@@ -34,7 +37,7 @@
           this.i == 22 ||
           this.i === 24
         ) {
-          this.borderTransparent();
+          this.borderColor(transparent);
         }
 
         if (this.i >= 7 && this.i <= 15) {
@@ -44,7 +47,7 @@
 
         if (this.i === 16) {
           this.txtElement.innerHTML = "Front-End&nbsp";
-          this.borderBlue();
+          this.borderColor(blue);
         }
 
         if (this.i >= 17 && this.i <= 23) {
@@ -61,10 +64,11 @@
           this.incrementCharacterCtrl();
         }
 
+        // end of the loop
         // if loop is finished, clear interval
         if (this.i === 36) {
           clearInterval(interval);
-          setTimeout(this.borderTransparent(), 2000);
+          setTimeout(this.borderColor(transparent), 2000);
         }
         // if loop is not finished, add one to the counter
         else {
@@ -73,13 +77,8 @@
       }, this.typeSpeed);
     },
 
-    //cursor flashing effect
-    borderBlue: function () {
-      this.txtElement.style.borderRight = "solid 2px rgb(76, 122, 145)";
-    },
-
-    borderTransparent: function () {
-      this.txtElement.style.borderRight = "solid 2px transparent";
+    borderColor: function (color) {
+      this.txtElement.style.borderRight = `solid 2px ${color}`;
     },
 
     //increment the character for a typing effect
@@ -88,7 +87,7 @@
 
       if (this.isTyping) {
         this.txtElement.innerHTML = txt.substring(0, this.i - 6);
-        this.borderBlue();
+        this.borderColor(blue);
       }
 
       if (this.hasDeleted) {
@@ -134,7 +133,7 @@
     }
   }
 
-  // begin
+  // init app
   function initPage() {
     const txtElement = document.querySelector(".txt-type"),
       words = JSON.parse(txtElement.getAttribute("data-words")),
