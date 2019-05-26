@@ -1,0 +1,51 @@
+// home section
+#landing{
+    height: 100vh;
+
+    @media screen and (max-width: 992px){
+        height: 100vh;
+        margin-bottom: 5vh!important;
+    }
+
+    .landing-content{
+        height: 75%;
+
+        @media screen and (max-width: 557px){
+            height: auto;
+        }
+
+        @media screen and (max-width: 992px){
+            margin-top: 10vh;
+        }
+
+        img{
+            height: 40vh;
+            margin-top: -5vh;
+
+            @media screen and (max-width: 992px){
+                margin-bottom: 5vh;
+            }
+        }
+    
+        .landing-titles{
+            max-width: 50vw;
+
+            @media screen and (max-width: 557px){
+                max-width: 100vh !important;
+            }
+
+            .txt-type{
+               @media screen and (max-width: 992px){
+                font-size: 1.25rem!important;
+                letter-spacing: 0.01rem;
+            } 
+
+
+            }
+
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+}

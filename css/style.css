@@ -6,6 +6,14 @@ body {
   body h1, body h2, body h3 {
     font-family: "Rock Salt", cursive;
     font-weight: 500; }
+    @media screen and (max-width: 992px) {
+      body h1, body h2, body h3 {
+        font-size: 2rem !important;
+        max-width: 100%;
+        text-align: center; } }
+  @media screen and (max-width: 992px) {
+    body h4 {
+      font-size: 1.5rem !important; } }
   body a {
     text-decoration: none !important; }
   body button:focus {
@@ -13,8 +21,17 @@ body {
 
 #landing {
   height: 100vh; }
+  @media screen and (max-width: 992px) {
+    #landing {
+      height: 100vh;
+      margin-bottom: 5vh !important; } }
   #landing .navbar {
     height: 15vh; }
+    @media screen and (max-width: 992px) {
+      #landing .navbar {
+        margin-bottom: 10vh !important;
+        text-align: center;
+        z-index: 1; } }
     #landing .navbar .navbar-nav {
       margin-right: 11vw; }
       #landing .navbar .navbar-nav a {
@@ -26,30 +43,66 @@ body {
         cursor: pointer;
         border-top: solid #4c7a91 3px;
         margin-bottom: -5px; }
+      @media screen and (max-width: 992px) {
+        #landing .navbar .navbar-nav .nav-item {
+          margin: 0 !important; } }
     #landing .navbar i {
       color: #4c7a91; }
   #landing .landing-content {
     height: 75%; }
+    @media screen and (max-width: 557px) {
+      #landing .landing-content {
+        height: auto; } }
+    @media screen and (max-width: 992px) {
+      #landing .landing-content {
+        margin-top: 10vh; } }
     #landing .landing-content img {
       height: 40vh;
       margin-top: -5vh; }
+      @media screen and (max-width: 992px) {
+        #landing .landing-content img {
+          margin-bottom: 5vh; } }
     #landing .landing-content .landing-titles {
       max-width: 50vw; }
+      @media screen and (max-width: 557px) {
+        #landing .landing-content .landing-titles {
+          max-width: 100vh !important; } }
+      @media screen and (max-width: 992px) {
+        #landing .landing-content .landing-titles .txt-type {
+          font-size: 1.25rem !important;
+          letter-spacing: 0.01rem; } }
       #landing .landing-content .landing-titles h2 {
         font-size: 3rem; }
+    @media screen and (max-width: 557px) {
+      #landing .landing-content .navbar-collapse {
+        background: white;
+        margin-right: -7.5vh !important; } }
 
 #about {
   background-color: #4c7a91;
   color: white;
   min-height: 100vh; }
+  @media screen and (max-width: 992px) {
+    #about {
+      height: auto; } }
   #about #about-title {
     margin-bottom: 15vh; }
   #about .intro {
     font-size: 2.25rem; }
+    @media screen and (max-width: 992px) {
+      #about .intro {
+        font-size: 1.5rem;
+        width: 100% !important; } }
+  @media screen and (max-width: 992px) {
+    #about .intro-2 {
+      display: none; } }
   #about .row {
     margin-top: 15vh; }
   #about img {
     height: 40vh; }
+    @media screen and (max-width: 992px) {
+      #about img {
+        margin: 2rem 0; } }
 
 #skills {
   color: #4c7a91;
@@ -60,12 +113,25 @@ body {
       cursor: pointer;
       height: 15vh;
       transition: transform 0.25s ease-in-out; }
+      @media screen and (max-width: 992px) {
+        #skills .content img {
+          height: 7.5vh !important;
+          margin: 2vh 2vw !important; } }
     #skills .content .active {
       transform: scale(1.75); }
+      @media screen and (max-width: 557px) {
+        #skills .content .active {
+          transform: scale(2) !important; } }
+      @media screen and (max-width: 992px) {
+        #skills .content .active {
+          transform: scale(1.25) !important; } }
     #skills .content .react {
       animation: shake 2.75s ease-in-out infinite; }
     #skills .content .image-text-set {
       margin: 2em 0; }
+      @media screen and (max-width: 992px) {
+        #skills .content .image-text-set p {
+          font-size: 1rem !important; } }
       #skills .content .image-text-set .active-text {
         display: inherit; }
       #skills .content .image-text-set .group {
@@ -77,34 +143,50 @@ body {
   #projects .card {
     background: none;
     border: none; }
-    #projects .card video {
+    @media screen and (max-width: 557px) {
+      #projects .card {
+        width: 100% !important; } }
+    @media screen and (max-width: 992px) {
+      #projects .card {
+        width: 90vw; } }
+    @media screen and (max-width: 557px) {
+      #projects .card .card-body {
+        padding-right: 0 !important;
+        padding-left: 0 !important; } }
+    #projects .card .card-body video {
       cursor: pointer;
       width: 100% !important; }
-    #projects .card p {
+    #projects .card .card-body p {
       font-size: 0.75rem;
       opacity: 0.8; }
-    #projects .card a {
+    #projects .card .card-body a {
       background: none;
       border: 2px solid white;
       color: white;
       padding: 0.5em 1em;
       transition: all 0.25s ease; }
-    #projects .card a:hover {
+    #projects .card .card-body a:hover {
       background: white;
       color: #4c7a91; }
 
 #contact {
   color: #4c7a91;
   min-height: 100vh; }
+  @media screen and (max-width: 992px) {
+    #contact .follow-title {
+      display: none; } }
+  @media screen and (max-width: 992px) {
+    #contact .icon-group {
+      padding-top: 2em; } }
+  #contact .icon-group .submit-btn:hover {
+    opacity: 0.75; }
+  #contact .icon-group .fab {
+    opacity: 0.9;
+    color: #4c7a91; }
   #contact .submit-btn {
     color: white;
     background-color: #4c7a91;
     transition: all 0.25s ease-in-out; }
-  #contact .submit-btn:hover {
-    opacity: 0.75; }
-  #contact .fab {
-    opacity: 0.9;
-    color: #4c7a91; }
   #contact .fab:hover {
     opacity: 1;
     cursor: pointer; }
@@ -132,73 +214,5 @@ body {
     transform: rotateZ(0deg) scale(1.75); }
   100% {
     transform: scale(1.75); } }
-@media screen and (max-width: 992px) {
-  h1, h2, h3 {
-    font-size: 2rem !important;
-    max-width: 100%;
-    text-align: center; }
-
-  h4 {
-    font-size: 1.5rem !important; }
-
-  #landing {
-    height: 100vh;
-    margin-bottom: 5vh !important; }
-    #landing .navbar {
-      margin-bottom: 10vh !important;
-      text-align: center;
-      z-index: 1; }
-      #landing .navbar .nav-item {
-        margin: 0 !important; }
-    #landing .landing-content {
-      margin-top: 10vh; }
-      #landing .landing-content .txt-type {
-        font-size: 1.25rem !important;
-        letter-spacing: 0.01rem; }
-      #landing .landing-content img {
-        margin-bottom: 5vh; }
-
-  #about {
-    height: auto; }
-    #about .intro {
-      font-size: 1.5rem;
-      width: 100% !important; }
-    #about img {
-      margin: 2rem 0; }
-    #about .intro-2 {
-      display: none; }
-
-  #skills img {
-    height: 7.5vh !important;
-    margin: 2vh 2vw !important; }
-  #skills .active {
-    transform: scale(1.25) !important; }
-  #skills p {
-    font-size: 1rem !important; }
-
-  #projects .card {
-    width: 90vw; }
-
-  #contact .follow-title {
-    display: none; }
-  #contact .icon-group {
-    padding-top: 2em; } }
-@media screen and (max-width: 557px) {
-  #landing {
-    height: auto; }
-    #landing .landing-titles {
-      max-width: 100vh !important; }
-    #landing .navbar-collapse {
-      background: white;
-      margin-right: -7.5vh !important; }
-
-  #skills .active {
-    transform: scale(2) !important; }
-
-  #projects .card {
-    width: 100% !important; }
-    #projects .card .card-body {
-      padding-right: 0 !important;
-      padding-left: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

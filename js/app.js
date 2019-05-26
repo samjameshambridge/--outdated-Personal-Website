@@ -15,11 +15,10 @@
     },
 
     type: function () {
-
+      const blue = "rgb(76, 122, 145)",
+        transparent = "transparent";
 
       var interval = setInterval(() => {
-        const blue = "rgb(76, 122, 145)",
-          transparent = "transparent";
 
         if (
           this.i === 0 ||
@@ -28,9 +27,7 @@
           this.i === 6 ||
           this.i === 23 ||
           this.i === 25
-        ) {
-          this.borderColor(blue);
-        }
+        ) this.borderColor(blue);
 
         if (
           this.i === 1 ||
@@ -38,9 +35,7 @@
           this.i === 5 ||
           this.i == 22 ||
           this.i === 24
-        ) {
-          this.borderColor(transparent);
-        }
+        ) this.borderColor(transparent);
 
         if (this.i >= 7 && this.i <= 15) {
           this.isTyping = true;
@@ -52,13 +47,9 @@
           this.borderColor(blue);
         }
 
-        if (this.i >= 17 && this.i <= 23) {
-          this.incrementCharacterCtrl();
-        }
+        if (this.i >= 17 && this.i <= 23) this.incrementCharacterCtrl();
 
-        if (this.i >= 28 && this.i <= 31) {
-          this.decrementCharacterCtrl();
-        }
+        if (this.i >= 28 && this.i <= 31) this.decrementCharacterCtrl();
 
         if (this.i >= 32) {
           this.hasDeleted = true;
@@ -66,16 +57,15 @@
           this.incrementCharacterCtrl();
         }
 
-        // end of the loop
+        // end of run through
         // if loop is finished, clear interval
         if (this.i === 36) {
           clearInterval(interval);
           setTimeout(this.borderColor(transparent), 2000);
         }
         // if loop is not finished, add one to the counter
-        else {
-          this.i++;
-        }
+        else this.i++;
+
       }, this.typeSpeed);
     },
 
@@ -86,9 +76,7 @@
     //increment the character for a typing effect
     incrementCharacterCtrl: function () {
       const blue = "rgb(76, 122, 145)",
-        transparent = "transparent";
-
-      const txt = this.words.toString();
+        txt = this.words.toString();
 
       if (this.isTyping) {
         this.txtElement.innerHTML = txt.substring(0, this.i - 6);
@@ -102,7 +90,7 @@
 
     // take away character for a cursor deleting effect
     decrementCharacterCtrl: function () {
-      var txt = this.words.toString();
+      const txt = this.words.toString();
 
       this.txtElement.innerHTML = txt.substring(0, this.i - this.d - 11);
 
@@ -112,8 +100,8 @@
 
   const skillImgCtrl = {
     init: function (originalClass, images) {
-      this.originalClass = originalClass,
-        this.images = images;
+      this.originalClass = originalClass;
+      this.images = images;
 
       images.forEach(image => image.addEventListener('mouseover', this.imgActive));
     },

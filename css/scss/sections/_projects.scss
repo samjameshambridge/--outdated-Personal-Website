@@ -1,0 +1,49 @@
+// projects section
+#projects{
+    @include blue-section($theme-blue);
+
+    .card{
+        background: none;
+        border: none;
+
+        @media screen and (max-width: 557px){
+            width: 100%!important;
+        }
+
+        @media screen and (max-width: 992px){
+            width: 90vw;
+        }
+
+        .card-body{
+            @media screen and (max-width: 557px){
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+
+            video{
+            cursor: pointer;
+            width: 100%!important;
+            }
+
+            p{
+                font-size: 0.75rem;
+                opacity: 0.8;
+            }
+
+            a{
+                background: none;
+                border: 2px solid $theme-white;
+                color: $theme-white;
+                padding: 0.5em 1em;
+                transition: all 0.25s ease;
+            }
+
+            a:hover{
+                background: $theme-white;
+                color: $theme-blue;
+            }
+        }
+
+        
+    }
+}

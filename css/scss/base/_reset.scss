@@ -1,0 +1,33 @@
+// body and utility classes
+body{
+    font-size: 20px !important;
+    color: rgb(76, 122, 145);
+    font-family: $regular-font !important;
+    overflow-x: hidden;
+
+    // utility classes
+    h1, h2, h3{
+        font-family: $trendy-font;
+        font-weight: 500;
+
+        @media screen and (max-width: 992px){
+            font-size: 2rem !important;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    h4{
+        @media screen and (max-width: 992px){
+            font-size: 1.5rem !important;
+        }
+    }
+
+    a{
+        text-decoration: none !important;
+    }
+
+    button:focus{
+        outline: none;
+    }
+}

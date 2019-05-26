@@ -1,3 +1,4 @@
-desktop.ini
-./css/style.css.map
+style.css
 package.json
+
+*.map
