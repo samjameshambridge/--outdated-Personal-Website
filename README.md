@@ -1,18 +1,20 @@
-# Personal Website
+# [Personal Website](https://www.samjameshambridge.com)
 
 <img src="./img/profile-pic.jpg" width="200">
 
 ## Table of contents
-* [Introduction](#introduction)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+
+- [Introduction](#introduction)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
 ## Introduction
-This is my personal website which I use for showcasing my skills and my portfolio of current projects. 
+
+This is my personal website which I use for showcasing my skills and my portfolio of current projects.
 
 ## Screenshots
 
@@ -31,16 +33,18 @@ My skills section.
 Contact form.
 
 ## Technologies
+
 This project is written with:
-* Javascript
-* Bootstrap
-* Jquery
-* CSS / SASS
-* HTML-5
+
+- Javascript
+- Bootstrap
+- Jquery
+- CSS / SASS
+- HTML-5
 
 ## Status
 
-Project is: _finished.
+Project is: \_finished.
 
 Although I will make additions and changes along the way as my skills and projects change. This website is deployed and considered finished.
 
