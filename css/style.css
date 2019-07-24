@@ -18,11 +18,15 @@ body {
   color: #4c7a91;
   font-family: "Josefin Sans" !important;
   overflow-x: hidden; }
-  body h1, body h2, body h3 {
+  body h1,
+  body h2,
+  body h3 {
     font-family: "Rock Salt";
     font-weight: 500; }
     @media screen and (max-width: 992px) {
-      body h1, body h2, body h3 {
+      body h1,
+      body h2,
+      body h3 {
         font-size: 2rem !important;
         max-width: 100%;
         text-align: center; } }

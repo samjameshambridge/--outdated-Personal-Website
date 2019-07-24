@@ -1,54 +1,54 @@
 // skills section
-#skills{
-    color: ($theme-blue);
-    min-height: 100vh;
+#skills {
+  color: ($theme-blue);
+  min-height: 100vh;
 
-    .content{
-        margin-top: 5vh;
+  .content {
+    margin-top: 5vh;
 
-        img{
-            cursor: pointer;
-            height: 15vh;
-            transition: transform 0.25s ease-in-out;
+    img {
+      cursor: pointer;
+      height: 15vh;
+      transition: transform 0.25s ease-in-out;
 
-            @media screen and (max-width: 992px){
-                height: 7.5vh !important;
-                margin: 2vh 2vw !important;
-            }
-        }
-
-        .active{
-            transform: scale(1.75);
-
-            @media screen and (max-width: 557px){
-                transform: scale(2)!important;
-            }
-
-            @media screen and (max-width: 992px){
-                transform: scale(1.25)!important;
-            }
-        }
-
-        .react{
-            animation: shake 2.75s ease-in-out infinite;
-        }
-
-        .image-text-set{
-            margin: 2em 0;
-
-            p{
-                @media screen and (max-width: 992px){
-                    font-size: 1rem !important;
-                }
-            }
-
-            .active-text{
-                display: inherit;
-            }
-
-            .group{
-                display: none;
-            }
-        }
+      @media screen and (max-width: 992px) {
+        height: 7.5vh !important;
+        margin: 2vh 2vw !important;
+      }
     }
+
+    .active {
+      transform: scale(1.75);
+
+      @media screen and (max-width: 557px) {
+        transform: scale(2) !important;
+      }
+
+      @media screen and (max-width: 992px) {
+        transform: scale(1.25) !important;
+      }
+    }
+
+    .react {
+      animation: shake 2.75s ease-in-out infinite;
+    }
+
+    .image-text-set {
+      margin: 2em 0;
+
+      p {
+        @media screen and (max-width: 992px) {
+          font-size: 1rem !important;
+        }
+      }
+
+      .active-text {
+        display: inherit;
+      }
+
+      .group {
+        display: none;
+      }
+    }
+  }
 }

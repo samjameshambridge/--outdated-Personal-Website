@@ -1,40 +1,39 @@
 // contact section
-#contact{
-    color: ($theme-blue);
-    min-height: 100vh;
+#contact {
+  color: ($theme-blue);
+  min-height: 100vh;
 
-    .follow-title{
-        @media screen and (max-width: 992px){
-            display: none;
-        }
+  .follow-title {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .icon-group {
+    @media screen and (max-width: 992px) {
+      padding-top: 2em;
     }
 
-    .icon-group{
-        @media screen and (max-width: 992px){
-            padding-top: 2em;
-        }
-
-        .submit-btn:hover{
-            opacity: 0.75;
-        }
-
-        // social media icons
-        .fab{
-            opacity: 0.9;
-            color: rgb(76, 122, 145);
-        }
+    .submit-btn:hover {
+      opacity: 0.75;
     }
 
-    // submit button
-    .submit-btn{
-        color: $theme-white;
-        background-color: $theme-blue;
-        transition: all 0.25s ease-in-out;
+    // social media icons
+    .fab {
+      opacity: 0.9;
+      color: $theme-blue;
     }
+  }
 
+  // submit button
+  .submit-btn {
+    color: $theme-white;
+    background-color: $theme-blue;
+    transition: all 0.25s ease-in-out;
+  }
 
-    .fab:hover{
-        opacity: 1;
-        cursor: pointer;
-    }
+  .fab:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
 }
