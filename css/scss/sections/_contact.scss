@@ -1,7 +1,8 @@
 // contact section
 #contact {
-  color: ($theme-blue);
+  color: $theme-blue;
   min-height: 100vh;
+  min-width: 100vw;
 
   .follow-title {
     @media screen and (max-width: 992px) {

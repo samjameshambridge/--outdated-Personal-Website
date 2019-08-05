@@ -1,6 +1,7 @@
 // projects section
 #projects {
   @include blue-section($theme-blue);
+  min-width: 100vw;
 
   .card {
     background: none;

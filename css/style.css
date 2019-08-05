@@ -67,15 +67,16 @@ body {
       margin-right: -7.5vh !important; } }
 
 .svg {
-  margin-top: -1vh; }
+  margin-top: -1px;
+  width: 100vw; }
 
 .svg-top {
-  width: 100vw;
-  margin-bottom: -1vh;
-  margin-left: -1vw; }
+  margin-bottom: -1px;
+  width: 100vw; }
 
 #landing {
-  height: 100vh; }
+  height: 100vh;
+  min-width: 100vw; }
   @media screen and (max-width: 992px) {
     #landing {
       height: 100vh;
@@ -111,7 +112,8 @@ body {
 #about {
   background-color: #4c7a91;
   color: white;
-  min-height: 100vh; }
+  min-height: 100vh;
+  min-width: 100vw; }
   @media screen and (max-width: 992px) {
     #about {
       height: auto; } }
@@ -136,7 +138,8 @@ body {
 
 #skills {
   color: #4c7a91;
-  min-height: 100vh; }
+  min-height: 100vh;
+  min-width: 100vw; }
   #skills .content {
     margin-top: 5vh; }
     #skills .content img {
@@ -169,7 +172,8 @@ body {
 
 #projects {
   background-color: #4c7a91;
-  color: white; }
+  color: white;
+  min-width: 100vw; }
   #projects .card {
     background: none;
     border: none; }
@@ -201,7 +205,8 @@ body {
 
 #contact {
   color: #4c7a91;
-  min-height: 100vh; }
+  min-height: 100vh;
+  min-width: 100vw; }
   @media screen and (max-width: 992px) {
     #contact .follow-title {
       display: none; } }
