@@ -108,6 +108,9 @@ body {
         font-size: 3rem; }
       #landing .landing-content .landing-titles a {
         color: #4c7a91; }
+        @media screen and (max-width: 557px) {
+          #landing .landing-content .landing-titles a {
+            display: none; } }
 
 #about {
   background-color: #4c7a91;

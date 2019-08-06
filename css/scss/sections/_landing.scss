@@ -48,6 +48,9 @@
 
       a {
         color: $theme-blue;
+        @media screen and (max-width: 557px) {
+          display: none;
+        }
       }
     }
   }
