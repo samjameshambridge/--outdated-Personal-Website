@@ -20,7 +20,7 @@
     }
 
     img {
-      height: 40vh;
+      max-height: 40vh;
       margin-top: -5vh;
 
       @media screen and (max-width: 992px) {
@@ -42,11 +42,11 @@
         }
       }
 
-      h2 {
+      .landing-titles-name {
         font-size: 3rem;
       }
 
-      a {
+      .landing-titles-github {
         color: $theme-blue;
         @media screen and (max-width: 557px) {
           display: none;

@@ -90,7 +90,7 @@ body {
       #landing .landing-content {
         margin-top: 10vh; } }
     #landing .landing-content img {
-      height: 40vh;
+      max-height: 40vh;
       margin-top: -5vh; }
       @media screen and (max-width: 992px) {
         #landing .landing-content img {
@@ -104,12 +104,12 @@ body {
         #landing .landing-content .landing-titles .txt-type {
           font-size: 1.25rem !important;
           letter-spacing: 0.01rem; } }
-      #landing .landing-content .landing-titles h2 {
+      #landing .landing-content .landing-titles .landing-titles-name {
         font-size: 3rem; }
-      #landing .landing-content .landing-titles a {
+      #landing .landing-content .landing-titles .landing-titles-github {
         color: #4c7a91; }
         @media screen and (max-width: 557px) {
-          #landing .landing-content .landing-titles a {
+          #landing .landing-content .landing-titles .landing-titles-github {
             display: none; } }
 
 #about {

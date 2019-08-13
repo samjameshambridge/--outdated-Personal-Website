@@ -4,7 +4,7 @@
 
   // type effect for landing page
   const typeCtrl = {
-    init: function (txtElement, words, typeSpeed) {
+    init: function(txtElement, words, typeSpeed) {
       this.txtElement = txtElement; //DOM element
       this.words = words; /*Front End Developer*/
       this.typeSpeed = typeSpeed;
@@ -14,12 +14,11 @@
       this.d = 1; //decrement counter
     },
 
-    type: function () {
+    type: function() {
       const blue = "rgb(76, 122, 145)",
         transparent = "transparent";
 
       var interval = setInterval(() => {
-
         if (
           this.i === 0 ||
           this.i === 2 ||
@@ -27,7 +26,8 @@
           this.i === 6 ||
           this.i === 23 ||
           this.i === 25
-        ) this.borderColor(blue);
+        )
+          this.borderColor(blue);
 
         if (
           this.i === 1 ||
@@ -35,7 +35,8 @@
           this.i === 5 ||
           this.i == 22 ||
           this.i === 24
-        ) this.borderColor(transparent);
+        )
+          this.borderColor(transparent);
 
         if (this.i >= 7 && this.i <= 15) {
           this.isTyping = true;
@@ -65,16 +66,15 @@
         }
         // if loop is not finished, add one to the counter
         else this.i++;
-
       }, this.typeSpeed);
     },
 
-    borderColor: function (color) {
+    borderColor: function(color) {
       this.txtElement.style.borderRight = `solid 2px ${color}`;
     },
 
     //increment the character for a typing effect
-    incrementCharacterCtrl: function () {
+    incrementCharacterCtrl: function() {
       const blue = "rgb(76, 122, 145)",
         txt = this.words.toString();
 
@@ -89,7 +89,7 @@
     },
 
     // take away character for a cursor deleting effect
-    decrementCharacterCtrl: function () {
+    decrementCharacterCtrl: function() {
       const txt = this.words.toString();
 
       this.txtElement.innerHTML = txt.substring(0, this.i - this.d - 11);
@@ -98,33 +98,42 @@
     }
   };
 
+  // skills animations
   const skillImgCtrl = {
-    init: function (originalClass, images) {
+    init: function(originalClass, images) {
       this.originalClass = originalClass;
       this.images = images;
 
-      images.forEach(image => image.addEventListener('mouseover', this.imgActive));
+      images.forEach(image =>
+        image.addEventListener("mouseover", this.imgActive)
+      );
     },
 
-    imgActive: function () {
+    imgActive: function() {
       skillImgCtrl.deactivateImages();
       this.className = `${skillImgCtrl.originalClass} active`;
       skillImgCtrl.textHandler(this);
     },
 
-    deactivateImages: function () {
+    deactivateImages: function() {
       this.images.forEach(image => {
         image.className = this.originalClass;
-      })
+      });
     },
 
-    textHandler: function (image) {
-      const id = image.getAttribute('data-id');
+    textHandler: function(image) {
+      const id = image.getAttribute("data-id");
 
       // these are all classnames defined in the css
-      document.querySelectorAll('.image-text-set div').forEach(textBox => textBox.getAttribute('data-text') === id ? textBox.className = "active-text" : textBox.className = "group");
+      document
+        .querySelectorAll(".image-text-set div")
+        .forEach(textBox =>
+          textBox.getAttribute("data-text") === id
+            ? (textBox.className = "active-text")
+            : (textBox.className = "group")
+        );
     }
-  }
+  };
 
   // init app
   function initPage() {
@@ -132,8 +141,7 @@
       words = JSON.parse(txtElement.getAttribute("data-words")),
       typeSpeed = txtElement.getAttribute("data-wait"),
       originalClass = "img img-fluid rounded-circle m-5",
-      images = document.querySelectorAll('.image-set img');
-
+      images = document.querySelectorAll(".image-set img");
 
     // init type ctrl
     typeCtrl.init(txtElement, words, typeSpeed);
@@ -142,4 +150,4 @@
     // init skill img ctrl
     skillImgCtrl.init(originalClass, images);
   }
-}());
+})();
