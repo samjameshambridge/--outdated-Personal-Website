@@ -2,6 +2,61 @@
   // call init on dom load
   document.addEventListener("DOMContentLoaded", initPage);
 
+  // maxtween animations
+  const tweenAnims = {
+    init: function() {
+      // landing page animations
+      TweenMax.fromTo(
+        ".profile-pic",
+        3,
+        {
+          x: "-20vw",
+          ease: Elastic.easeOut
+        },
+        {
+          x: 0,
+          ease: Elastic.easeOut
+        }
+      );
+      TweenMax.fromTo(
+        ".landing-titles-name, .landing-titles p",
+        3,
+        {
+          y: "20vw",
+          ease: Elastic.easeOut
+        },
+        {
+          y: 0,
+          ease: Elastic.easeOut
+        }
+      );
+      TweenMax.from(".landing-titles-github", 1, {
+        delay: 5,
+        opacity: 0,
+        ease: Power0.easeIn
+      });
+
+      this.scrollMagicker();
+    },
+
+    scrollMagicker: function() {
+      // init scrollmagic
+      var controller = new ScrollMagic.Controller();
+
+      var scene1 = new ScrollMagic.Scene({
+        triggerElement: "#skills"
+      })
+        .setClassToggle(".animating-logo", "reveal")
+        .addTo(controller);
+
+      var scene2 = new ScrollMagic.Scene({
+        triggerElement: "#about"
+      })
+        .setClassToggle(".about-bottom-row, .about-top-row", "reveal")
+        .addTo(controller);
+    }
+  };
+
   // type effect for landing page
   const typeCtrl = {
     init: function(txtElement, words, typeSpeed) {
@@ -101,7 +156,7 @@
   // skills animations
   const skillImgCtrl = {
     init: function(originalClass, images) {
-      this.originalClass = originalClass;
+      // this.originalClass = originalClass;
       this.images = images;
 
       images.forEach(image =>
@@ -110,16 +165,15 @@
     },
 
     imgActive: function() {
-      skillImgCtrl.deactivateImages();
-      this.className = `${skillImgCtrl.originalClass} active`;
+      // skillImgCtrl.deactivateImages();
       skillImgCtrl.textHandler(this);
     },
 
-    deactivateImages: function() {
-      this.images.forEach(image => {
-        image.className = this.originalClass;
-      });
-    },
+    // deactivateImages: function() {
+    //   this.images.forEach(image => {
+    //     image.className = this.originalClass;
+    //   });
+    // },
 
     textHandler: function(image) {
       const id = image.getAttribute("data-id");
@@ -142,6 +196,9 @@
       typeSpeed = txtElement.getAttribute("data-wait"),
       originalClass = "img img-fluid rounded-circle m-5",
       images = document.querySelectorAll(".image-set img");
+
+    // init animations
+    tweenAnims.init();
 
     // init type ctrl
     typeCtrl.init(txtElement, words, typeSpeed);

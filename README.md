@@ -1,4 +1,4 @@
-# [Personal Website](https://www.samjameshambridge.com)
+# Personal Website
 
 <img src="./img/profile-pic.jpg" width="200">
 
@@ -14,11 +14,11 @@
 
 ## Introduction
 
-This is my personal website which I use for showcasing my skills and my portfolio of current projects.
+This repo contains my old personal website which was my first project. It has since been overhauled and replaced. The new website is hosted at the same address: https://samjameshambridge.com.
 
 ## Screenshots
 
-This is a sample of <em>some</em> of the sections of my site.
+The following are screenshots of sections of the old site.
 
 ![landing-section](https://github.com/samjameshambridge/Personal-Website/blob/screenshots/screenshots/landing-section.png)
 
@@ -34,7 +34,7 @@ Contact form.
 
 ## Technologies
 
-This project is written with:
+This project was written with:
 
 - Javascript
 - Bootstrap
@@ -46,13 +46,13 @@ This project is written with:
 
 Project is: \_finished.
 
-Although I will make additions and changes along the way as my skills and projects change. This website is deployed and considered finished.
+This site is no longer used and has been replaced with a React Application hosted on the same domain (https://samjameshambridge.com). The github repo for the new site can be found at: https://github.com/samjameshambridge/personal-website-v2.
 
 ## Inspiration
 
-After beginning to write a lot of my own projects, I wanted a website which I could use to display and showcase them.
+When I started teaching myself Front End Development, I designed and created this website to showcase my emerging portfolio to potential employers.
 
-The aim was to create a website which felt fairly original and simple. I didn't want to have too many effects and animations, i wanted to it to be clear and accessible.
+The aim was to create a website which felt original and simple. I didn't want to have too many effects and animations, i wanted to it to be clear and accessible.
 
 ## Contact
 

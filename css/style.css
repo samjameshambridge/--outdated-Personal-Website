@@ -40,31 +40,55 @@ body {
 
 .navbar {
   height: 15vh; }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-left: 0 !important;
+      margin-bottom: 10vh !important;
+      min-width: 100vw !important; } }
+  @media screen and (min-width: 768px) {
+    .navbar {
+      justify-content: flex-end !important; } }
   @media screen and (max-width: 992px) {
     .navbar {
-      margin-bottom: 10vh !important;
+      margin-right: 5%;
       text-align: center;
       z-index: 1; } }
+  @media screen and (min-width: 1200px) {
+    .navbar {
+      margin-right: 4%; } }
   .navbar .navbar-nav {
     margin-right: 11vw; }
+    @media screen and (orientation: portrait) {
+      .navbar .navbar-nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important; } }
+    @media screen and (max-width: 768px) {
+      .navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+        min-width: 100%; } }
     .navbar .navbar-nav a {
       color: #4c7a91;
       border-top: solid transparent 1px;
       transition: border-top, margin-bottom ease-in-out;
       transition-duration: 0.2s; }
-    .navbar .navbar-nav a:hover {
-      cursor: pointer;
-      border-top: solid #4c7a91 3px;
-      margin-bottom: -5px; }
+      .navbar .navbar-nav a:hover {
+        cursor: pointer;
+        border-top: solid #4c7a91 3px;
+        margin-bottom: -5px; }
     @media screen and (max-width: 992px) {
       .navbar .navbar-nav .nav-item {
         margin: 0 !important; } }
   .navbar i {
     color: #4c7a91; }
-  @media screen and (max-width: 557px) {
-    .navbar .navbar-collapse {
-      background: white;
-      margin-right: -7.5vh !important; } }
+  .navbar .navbar-collapse {
+    flex-grow: 0; }
+    @media screen and (max-width: 557px) {
+      .navbar .navbar-collapse {
+        background: white; } }
 
 .svg {
   margin-top: -1px;
@@ -86,14 +110,11 @@ body {
     @media screen and (max-width: 557px) {
       #landing .landing-content {
         height: auto; } }
-    @media screen and (max-width: 992px) {
-      #landing .landing-content {
-        margin-top: 10vh; } }
-    #landing .landing-content img {
+    #landing .landing-content .profile-pic {
       max-height: 40vh;
       margin-top: -5vh; }
       @media screen and (max-width: 992px) {
-        #landing .landing-content img {
+        #landing .landing-content .profile-pic {
           margin-bottom: 5vh; } }
     #landing .landing-content .landing-titles {
       max-width: 50vw; }
@@ -122,15 +143,25 @@ body {
       height: auto; } }
   #about #about-title {
     margin-bottom: 15vh; }
-  #about .intro {
-    font-size: 2.25rem; }
+  #about .about-top-row {
+    opacity: 0;
+    transition: all 1s ease-in-out; }
+    #about .about-top-row .intro {
+      font-size: 2.25rem; }
+      @media screen and (max-width: 992px) {
+        #about .about-top-row .intro {
+          font-size: 1.5rem;
+          width: 100% !important; } }
     @media screen and (max-width: 992px) {
-      #about .intro {
-        font-size: 1.5rem;
-        width: 100% !important; } }
-  @media screen and (max-width: 992px) {
-    #about .intro-2 {
-      display: none; } }
+      #about .about-top-row .intro-2 {
+        display: none; } }
+  #about .about-bottom-row {
+    opacity: 0;
+    transition: all 1s ease-in-out; }
+  #about .about-top-row.reveal {
+    opacity: 1; }
+  #about .about-bottom-row.reveal {
+    opacity: 1; }
   #about .row {
     margin-top: 15vh; }
   #about img {
@@ -145,24 +176,19 @@ body {
   min-width: 100vw; }
   #skills .content {
     margin-top: 5vh; }
-    #skills .content img {
-      cursor: pointer;
-      height: 15vh;
-      transition: transform 0.25s ease-in-out; }
-      @media screen and (max-width: 992px) {
-        #skills .content img {
-          height: 7.5vh !important;
-          margin: 2vh 2vw !important; } }
-    #skills .content .active {
-      transform: scale(1.75); }
-      @media screen and (max-width: 557px) {
-        #skills .content .active {
-          transform: scale(2) !important; } }
-      @media screen and (max-width: 992px) {
-        #skills .content .active {
-          transform: scale(1.25) !important; } }
-    #skills .content .react {
-      animation: shake 2.75s ease-in-out infinite; }
+    #skills .content .image-set {
+      min-height: calc(30vh + 12rem); }
+      #skills .content .image-set .animating-logo {
+        cursor: pointer;
+        height: 15vh;
+        opacity: 0;
+        transition: all 1s ease-in-out; }
+        @media screen and (max-width: 992px) {
+          #skills .content .image-set .animating-logo {
+            height: 7.5vh !important;
+            margin: 2vh 2vw !important; } }
+      #skills .content .image-set .animating-logo.reveal {
+        opacity: 1; }
     #skills .content .image-text-set {
       margin: 2em 0; }
       @media screen and (max-width: 992px) {
@@ -179,7 +205,8 @@ body {
   min-width: 100vw; }
   #projects .card {
     background: none;
-    border: none; }
+    border: none;
+    padding: 0 5vw; }
     @media screen and (max-width: 557px) {
       #projects .card {
         width: 100% !important; } }
@@ -200,7 +227,8 @@ body {
       background: none;
       border: 2px solid white;
       color: white;
-      padding: 0.5em 1em;
+      font-size: 0.9em;
+      padding: 0.25rem 0.5rem;
       transition: all 0.25s ease; }
     #projects .card .card-body a:hover {
       background: white;

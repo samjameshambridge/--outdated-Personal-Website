@@ -7,31 +7,24 @@
   .content {
     margin-top: 5vh;
 
-    img {
-      cursor: pointer;
-      height: 15vh;
-      transition: transform 0.25s ease-in-out;
+    .image-set {
+      min-height: calc(30vh + 12rem);
 
-      @media screen and (max-width: 992px) {
-        height: 7.5vh !important;
-        margin: 2vh 2vw !important;
-      }
-    }
+      .animating-logo {
+        cursor: pointer;
+        height: 15vh;
+        opacity: 0;
+        transition: all 1s ease-in-out;
 
-    .active {
-      transform: scale(1.75);
-
-      @media screen and (max-width: 557px) {
-        transform: scale(2) !important;
+        @media screen and (max-width: 992px) {
+          height: 7.5vh !important;
+          margin: 2vh 2vw !important;
+        }
       }
 
-      @media screen and (max-width: 992px) {
-        transform: scale(1.25) !important;
+      .animating-logo.reveal {
+        opacity: 1;
       }
-    }
-
-    .react {
-      animation: shake 2.75s ease-in-out infinite;
     }
 
     .image-text-set {

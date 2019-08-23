@@ -6,6 +6,7 @@
   .card {
     background: none;
     border: none;
+    padding: 0 5vw;
 
     @media screen and (max-width: 557px) {
       width: 100% !important;
@@ -35,7 +36,8 @@
         background: none;
         border: 2px solid $theme-white;
         color: $theme-white;
-        padding: 0.5em 1em;
+        font-size: 0.9em;
+        padding: 0.25rem 0.5rem;
         transition: all 0.25s ease;
       }
 
